@@ -1,8 +1,18 @@
+import { Link } from "react-router-dom"; // Don't forget this if you use <Link>
 
-const home = () => {
+const Home = () => {
   return (
-    <div>home</div>
-  )
-}
+    <div className="home">
+      <section></section>
+      <h1>
+        Latest Product
+        <Link to="/search" className="findmore">More</Link>
+      </h1>
 
-export default home
+      {/* product card */}
+      <main></main>
+    </div>
+  );
+};
+
+export default Home;

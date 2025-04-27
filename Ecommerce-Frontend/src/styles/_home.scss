@@ -1,0 +1,20 @@
+.home{
+    padding:  2rem 5%;
+    display: flex;
+    flex-direction: column;
+    height:L calc(100vh - 4ren);
+    width: 100%;
+
+    > section{
+        width: 100%;
+        height: 18.25rem;
+        margin: auto;
+        background-image: url("../assets/cover.jpg") no-repeat center / cover;
+    }
+
+    .h1{
+        @include heading(1px);
+        margin-top: 3rem;
+        @include flex(row, space-bertween,center);
+    }
+}
